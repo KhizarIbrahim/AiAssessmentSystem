@@ -12,14 +12,17 @@ public class StudentGrid {
     private final ArrayList<JPanel> panels = new ArrayList<>();
     private final ArrayList<JLabel> label = new ArrayList<>();
 
-    public StudentGrid(int rows, int cols, int cid){
-        Frame frame = new JFrame("Student information");
+    public createStudentGrid(int rows, int cols, int cid){
+        JFrame frame = new JFrame("Student information");
         frame.setLayout(new GridLayout(rows, cols));
 
-        for (int i = 0, i < cid; i++) {
+        for (Student student : students) {
             JPanel panel = new JPanel();
             JLabel label = new JLabel();
             panel.add(label);
+            frame.add(panel);
+
+            panels.add(panel);
             labels.add(label);
 
         }
