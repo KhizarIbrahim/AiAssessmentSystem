@@ -1,4 +1,4 @@
-import AssessmentFeed;
+import assessments.AssessmentFeed;
 
 
 public abstract class Student {
@@ -41,7 +41,7 @@ public abstract class Assessment {
         this.percentageMark = percentageMark;
     }
 
-    public static double getResult(String cid, String assessmentName.String subAssessmentName) {
+    public static double getResult(String cid, String assessmentName, String subAssessmentName) {
         this.cid = cid;
         this.assessmentName = assessmentName;
         this.subAssessmentName = subAssessmentName;
