@@ -18,7 +18,7 @@ public abstract class Student {
         return cid;
     }
 
-    public String getMame() {
+    public String getName() {
         return name;
     }
 
@@ -39,5 +39,11 @@ public abstract class Assessment {
     public Assessment(String assessmentName, double percentageMark) {
         this.assessmentName = assessmentName;
         this.percentageMark = percentageMark;
+    }
+
+    public static double getResult(String cid, String assessmentName.String subAssessmentName) {
+        this.cid = cid;
+        this.assessmentName = assessmentName;
+        this.subAssessmentName = subAssessmentName;
     }
 }
